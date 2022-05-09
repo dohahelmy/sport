@@ -1,0 +1,63 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: (Taghthiyah) page v02.ai
+Color Mode: RGB color
+Color Profile: sRGB IEC61966-2.1
+Ruler Units: pixels
+Artboard Dimensions: 1920 px x 3418 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+PANTONE P 99-16 U (RGB)
+R=215 G=169 B=80 1 (RGB)
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Soho Gothic Pro Light (OTF)
+DIN Next LT Arabic Regular (OTF)
+DIN Next LT Arabic Heavy (OTF)
+DIN Next LT W23 Regular (TrueType)
+DIN Next LT W23 Medium (TrueType)
+DIN Next LT W23 Bold (TrueType)
+Tajawal-Bold (TrueType)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Volumes/NO NAME/Raslani/Sports Website/shutterstock_1064941334.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 106173K, 9024 by 4016 pixels
+Dimensions: 998.463 by 444.351 points 
+Resolution: 650.728 by 650.728 pixels per inch
+
+
+/Volumes/NO NAME/Raslani/Sports Website/shutterstock_1262711218.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 41256K, 4596 by 3064 pixels
+Dimensions: 1921 by 1280.667 points 
+Resolution: 172.26 by 172.26 pixels per inch
