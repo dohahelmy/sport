@@ -1,0 +1,51 @@
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  min-width: 6rem;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  letter-spacing: 1px;
+  position: relative;
+
+  span {
+    font-weight: 700;
+  }
+
+  &:focus,
+  &:hover {
+    top: -1px;
+    left: -1px;
+  }
+
+
+  &-dark {
+    color: color(light);
+    background-color: color(dark);
+  }
+
+  &-light {
+    color: color(dark);
+    background-color: color(light);
+  }
+
+}
+
+.tab {
+  min-width: 11rem;
+  padding: 0 1.25rem;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  border-radius: 0.75rem;
+  border: 1px solid color(dark);
+
+  &.active {
+    color: color(light);
+    background-color: color(dark);
+  }
+}

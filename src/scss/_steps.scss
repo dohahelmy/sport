@@ -1,0 +1,80 @@
+.step-app {
+  margin-top: 2rem;
+
+  >.step-steps {
+    justify-content: center;
+
+    >li {
+      font-size: 2rem;
+      font-weight: 700;
+      color: color(light);
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 100%;
+      text-align: center;
+      line-height: 3rem;
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0 4rem;
+      position: relative;
+      z-index: 0;
+
+      &:before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        width: 235%;
+        left: 100%;
+        height: 1px;
+        border-bottom: 1px dashed color(grey);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:first-child {
+        &:before {
+          content: unset;
+        }
+      }
+
+      &.active,
+      &.done {
+        background-color: color(dark);
+
+        &:before {
+          border-color: color(dark);
+        }
+      }
+    }
+  }
+
+  >.step-content {
+    margin-top: 3rem;
+    border: none;
+    .step-tab-panel {
+      text-align: center;
+      
+      &__title {
+        display: inline;
+        padding: 0 0.75rem;
+        font-size: 1.8rem;
+        color: color(dark);
+        background-color: color(light);
+      }
+      fieldset{
+        margin: 3rem 0;
+      }
+    }
+
+  }
+
+  .step-footer{
+    margin: 0;
+    .btn{
+      cursor: pointer;
+      padding-bottom: 0.5rem;
+      bottom: -1.8rem
+    }
+  }
+
+}

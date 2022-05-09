@@ -1,0 +1,43 @@
+/* ========== Colors ========== */
+$light:#FFFFFF;
+$grey: #EDEEF5;
+$dark: #3D7791;
+
+
+@function color($name) {
+  @return var(--color-#{$name});
+}
+
+:root {
+  --color-light:#FFFFFF;
+  --color-grey: #EDEEF5;
+  --color-dark: #3D7791;
+}
+
+/* ========== Fonts ========== */
+
+@font-face {
+  font-family: "HelveticaNeueLT";
+  src: url("../fonts/HelveticaNeueLT.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "HelveticaNeueLT";
+  src: url("../fonts/HelveticaNeueLT_B.otf");
+  font-weight: 700;
+}
+
+// Responsive breakpoints
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Extra small devices (landscape phones, 280px and up)
+$xs-phones: 445px;
+// Small devices (landscape phones, 576px and up)
+$phones: 576px;
+// Medium devices (tablets, 768px and up)
+$tablets: 768px;
+// Large devices (desktops, 992px and up)
+$desktops: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$HD: 1200px;

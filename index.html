@@ -1,0 +1,31 @@
+<!-- @@include(
+'./includes/0_header.html',
+{"webRoot": ".",
+"document-title": "توظيف",
+"page-id": "home"}
+)
+
+
+@@include('./includes/1_filter.html', {"webRoot": "."})
+<section class="create-btn">
+    <a href="@@webRoot/create.html" class="btn btn-dark">
+        <svg>
+            <use xlink:href=@@webRoot/assets/img/sprite.svg#plus>
+                <title>plus</title>
+        </svg>
+        <span>إنشاء سيرة ذاتية</span>
+    </a>
+</section>
+
+<section class="jobs-list">
+    @@for(var item = 0; item < 4; item++) { 
+        @@include('./includes/2_itemCard.html', {"webRoot": "." }) 
+    } 
+
+    <div class="text-center more">
+        <a href="" class="more-link back_line">اظهر المزيد</a>
+    </div>
+</section>
+
+
+@@include('./includes/scripts.html', {"webRoot": "."}) -->
