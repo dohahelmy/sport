@@ -17,62 +17,35 @@
 <body>
 	<!-- start header-->
 	<header id="home">
+		<!-- Navbar -->
 		<div class="container">
-
-			<!-- Navbar -->
 			<nav class="nav flex items-center justify-between">
-				<a href="@@webRoot/" class="logo"><img src="@@webRoot/assets/img/logo.png" alt=""></a>
-				<button type="button" class="btn btn-light" id="modal-btn">دخول</>
+				<a href="@@webRoot/" class="logo"><img src="@@webRoot/assets/img/logo.png" alt="Website logo"></a>
+				<div class="navbar-container flex flex-column items-end justify-between">
+					<button type="button" class="btn btn-outline" id="lang">En</button>
+					<nav class="navbar flex items-center">
+						@@for(var i = 0; i < nav.length; i++) { <a href="" class="nav-link">`+ nav[i].text +`</a>
+							}
+					</nav>
+				</div>
 			</nav>
+		</div>
 
-			<!-- Search bar -->
-			<form action="" class="search">
-				<input type="search" name="" id="" placeholder="مثال، محاسب . مهندس . مصمم">
-				<input type="submit" value="">
-			</form>
-
-
-			<section class="modal" id="login-modal">
-				<div class="modal-dialog">
-					<div class="modal-body">
-						<div class="modal-header">
-							<img src="@@webRoot/assets/img/logo.png" alt="" class="logo">
-							<p class="desc">قم بالدخول بإستخدام احد الخيارات التالية</p>
-						</div>
-						<div class="modal-content">
-							<form action="">
-								<div class="service-provider">
-									<label>مقدم الخدمة / المشغل</label>
-									<div class="flex items-center">
-										<span class="radio-input">
-											<input type="radio" name="provider" id="stc">
-											<label for="stc">STC</label>
-										</span>
-										<span class="radio-input">
-											<input type="radio" name="provider" id="zain">
-											<label for="zain">ZAIN</label>
-										</span>
-										<span class="radio-input">
-											<input type="radio" name="provider" id="mobily">
-											<label for="mobily">MOBILY</label>
-										</span>
-									</div>
-								</div>
-								<div class="input-box">
-									<label for="phone">رقم الجوال</label>
-									<input type="tel" name="phone" id="phone">
-								</div>
-								<div class="flex items-center justify-between btns">
-									<input type="submit" value="ارسال" class="btn tab btn-dark">
-									<input type="button" value="إلغاء" class="btn tab btn-light modal-close">
-								</div>
-							</form>
-						</div>
+		<!-- Header Slider -->
+		<section class="owl-carousel main-slider relative">
+			@@for(var i = 0; i < 8; i++) { <div class="slider-item relative">
+				<div class="img-wrapper">
+					<div class="img">
+						<img src="@@webRoot/assets/img/samples/`+i+`.jpg" alt="slider-img-`+i+`">
 					</div>
 				</div>
-			</section>
-
-		</div>
+				<div class="slider-item__text flex flex-column items-center justify-center">
+					<span>مارس تماررررينك</span>
+					<span class="font-heavy">بالشكل الصحيح</span>
+				</div>
+				</div>
+				}
+		</section>
 	</header>
 
 	<main role="main" class="container" id="@@page-id">

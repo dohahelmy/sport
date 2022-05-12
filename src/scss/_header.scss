@@ -1,29 +1,9 @@
-header {
-    background: no-repeat center/cover url('../img/resumes-desk.png');
-    position: relative;
-    z-index: 1;
-    height: 40rem;
-
-    &::after {
-        z-index: 0;
-        content: '';
-        position: absolute;
-        inset: 0;
-        background-color: color(dark);
-        opacity: 0.6;
-    }
-
-    .container{
-        display: grid;
-        height: 100%;
-        align-items: baseline;
-    }
-}
+header {}
 
 .logo {
     display: inline-block;
-    height: 3.7rem;
-    width: 13rem;
+    height: 10rem;
+    width: 20rem;
 
     img {
         height: 100%;
@@ -32,42 +12,86 @@ header {
     }
 }
 
-.nav{
+.nav {
     position: relative;
-    z-index: 4;
-    margin-top: 3rem;
-    .btn{
-        width: 10rem;
+    background-color: color(white);
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+
+    .btn {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.4rem;
+        padding-top: 0.35rem;
+        border: 2px solid color(accent-light);
+    }
+
+    .navbar-container {
+        width: 100%;
+        height: 10rem;
+        margin-inline-start: 5rem;
+    }
+
+    .navbar {
+        width: 100%;
+
+        .nav-link {
+            flex-grow: 1;
+            font-size: 1.8rem;
+            color: color(white);
+            background-color: color(accent-dark);
+            margin-inline-end: 1rem;
+            text-align: center;
+
+            &:hover,
+            &:focus {
+                background-color: color(accent-light);
+            }
+
+            &:last-child {
+                margin-inline-end: 0;
+            }
+        }
     }
 }
 
-.search{
-    position: relative;
-    z-index: 5;
-    align-self: end;
-    margin-bottom: 3rem;
-    input[type="search"]{
-        font-size: 1.6rem;
-        width: 100%;
-        height: 5.5rem;
-        border: none;
-        border-radius: 1.25rem;
-        background: no-repeat #FFF url("data:image/svg+xml,%3Csvg id='search' xmlns='http://www.w3.org/2000/svg' width='17.737' height='17.736' viewBox='0 0 17.737 17.736'%3E%3Cpath id='Path_8' data-name='Path 8' d='M29,23.16a1.109,1.109,0,0,0-1.569,0l-4.268,4.268A1.109,1.109,0,0,0,24.73,29L29,24.729a1.109,1.109,0,0,0,0-1.569Z' transform='translate(-22.838 -11.585)' fill='%233d7791' fill-rule='evenodd'/%3E%3Cpath id='Path_9' data-name='Path 9' d='M7.205,13.3a6.1,6.1,0,1,1,6.1-6.1A6.1,6.1,0,0,1,7.205,13.3ZM0,7.205A7.205,7.205,0,1,0,7.205,0,7.205,7.205,0,0,0,0,7.205Z' transform='translate(3.326 0)' fill='%233d7791' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
-        background-size: 2.5rem 2.5rem;
-        background-position: 98% center;
-        padding: 1rem 6rem;
-        &:focus{
-            outline: 2px solid rgb(236, 196, 18);
+.main-slider {
+    .slider-item {
+        .img-wrapper {
+            max-height: 73rem;
+            // .img{
+            //     background-blend-mode: luminosity;
+            //     background-image: linear-gradient(to left, color(garient-green), color(garient-blue));
+            // }
+
+            &::before {
+                padding-top: 40%;
+
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+            }
         }
-    }
-    input[type="submit"]{
-        width: 2rem;
-        height: 2rem;
-        border: none;
-        position: absolute;
-        left: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-        background: no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.002' height='15.753' viewBox='0 0 18.002 15.753'%3E%3Cg id='arrow-left-short' transform='translate(-8.998 -10.123)'%3E%3Cpath id='Path_6' data-name='Path 6' d='M17.672,10.454a1.125,1.125,0,0,1,0,1.593L11.716,18l5.956,5.954a1.126,1.126,0,0,1-1.593,1.593L9.329,18.8a1.125,1.125,0,0,1,0-1.593l6.75-6.75a1.125,1.125,0,0,1,1.593,0Z' fill='%233d7791' fill-rule='evenodd'/%3E%3Cpath id='Path_7' data-name='Path 7' d='M10.125,18a1.125,1.125,0,0,1,1.125-1.125H25.875a1.125,1.125,0,0,1,0,2.25H11.25A1.125,1.125,0,0,1,10.125,18Z' fill='%233d7791' fill-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E%0A");
+
+        &__text {
+            position: absolute;
+            inset: 0;
+            margin-inline-start: 40%;
+            margin-bottom: 5.2rem;
+
+            span {
+                color: color(white);
+                font-size: 3rem;
+                line-height: 1.25;
+                text-shadow: 0.7rem 0.7rem 1.2rem #444444;
+
+                @media only screen and (min-width: $phones) {
+                    font-size: 4rem;
+                }
+            }
+        }
     }
 }

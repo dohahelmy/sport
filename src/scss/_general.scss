@@ -4,7 +4,6 @@
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
-
 	// @media (min-width: $phones) {
 	// 	max-width: 54rem;
 	// }
@@ -22,13 +21,21 @@
 	// }
 }
 
+.dir-ltr {
+	direction: ltr;
+}
+
+.dir-rtl {
+	direction: rtl;
+}
+
 // colors
 .is-primary {
 	color: color(primary);
 }
 
 .is-dimmed {
-	color: color(grey);
+	color: color(accent-light);
 }
 
 .is-white {
@@ -44,12 +51,16 @@
 }
 
 // Fonts
-.fBold {
+.font-heavy {
+	font-weight: 900;
+}
+
+.font-bold {
 	font-weight: 700;
 }
 
 .fRegular {
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .f14 {
@@ -70,68 +81,151 @@
 	z-index: 0;
 }
 
-.back_line {
-	position: relative;
-	z-index: 0;
+.sec-block {
+	padding: 5rem 0;
+}
 
-	&:before,
-	&:after {
-		content: '';
+.img-wrapper {
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		padding-top: 67%;
+
+	}
+
+	.img {
 		position: absolute;
-		z-index: -1;
-		width: 2rem;
-		height: 0.1px;
-		background-color: color(dark);
-		top: 56%;
-		transform: translateY(-50%);
-	}
-	&:before{
-		left: 100%;
-	}
-	&:after{
-		right: 100%;
+		inset: 0;
+		overflow: hidden;
+
+		img {
+			display: block;
+			width: 100%;
+			min-height: 100%;
+			object-fit: cover;
+		}
 	}
 }
+
+.accent-title {
+	font-size: 3rem;
+	font-weight: 900;
+	color: color(accent-light);
+}
+
+/* ========== form styles ========== */
+.form {
+	&-group {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		label {
+			font-size: 2rem;
+			width: 10rem;
+			margin-inline-end: 3rem;
+		}
+	}
+
+	&-control {
+		flex-grow: 1;
+		font-size: 1.8rem;
+		height: 4.5rem;
+		padding: 0.5rem 2rem;
+		border: 1px solid color(accent-dark);
+	}
+}
+
+.owl {
+	&-nav {
+		display: none;
+	}
+
+	&-dots {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem 0 1.5rem 0;
+		background-color: #8A91BD;
+		background-blend-mode: multiply;
+	}
+
+	&-dot {
+		flex-shrink: 0;
+		width: 1.2rem;
+		height: 1.2rem;
+		margin: 0 0.25rem;
+		border: 0.2rem solid color(white);
+		border-radius: 100%;
+		background-color: color(white);
+
+		&.active {
+			background-color: color(accent-light);
+		}
+	}
+}
+
+
 
 /* ========== FlexBox Classes ========== */
 .flex {
 	display: flex;
+
+	&-column {
+		flex-direction: column;
+	}
+
+	&-col-center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-wrap {
+		flex-wrap: wrap;
+	}
+
+	&-shrink-0 {
+		flex-shrink: 0;
+	}
 }
 
-.flex-wrap {
-	flex-wrap: wrap;
+.items {
+	&-center {
+		align-items: center;
+	}
+
+	&-end {
+		align-items: end;
+	}
 }
 
-.items-center {
-	align-items: center;
+.justify {
+	&-center {
+		justify-content: center;
+	}
+
+	&-between {
+		justify-content: space-between;
+	}
+
+	&-even {
+		justify-content: space-evenly;
+	}
 }
 
-.justify-center {
-	justify-content: center;
-}
 
-.justify-between {
-	justify-content: space-between;
-}
 
-.flex-column {
-	flex-direction: column;
-}
-
-.flex-col-center {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.flex-wrap {
-	flex-wrap: wrap;
-}
-
-.flex-shrink-0 {
-	flex-shrink: 0;
-}
 
 /* ========== Style SVG ========== */
 .resize-svg {
@@ -154,10 +248,10 @@
 	}
 
 	&-dark {
-		fill: color(dark);
+		fill: color(accent-dark);
 	}
 
 	&-light {
-		fill: color(light);
+		fill: color(white);
 	}
 }

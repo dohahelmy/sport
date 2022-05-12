@@ -3,13 +3,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  min-width: 6rem;
-  border-radius: 4rem;
-  font-size: 1.6rem;
-  font-weight: 700;
+  border: 1px solid;
+  font-size: 2rem;
   text-align: center;
-  padding-bottom: 0.5rem;
+  // padding-bottom: 0.5rem;
   letter-spacing: 1px;
   position: relative;
 
@@ -23,15 +20,27 @@
     left: -1px;
   }
 
+  &-outline {
+    color: color(accent-dark);
+    background-color: color(white);
+  }
+
 
   &-dark {
-    color: color(light);
-    background-color: color(dark);
+    color: color(white);
+    border-color: color(accent-dark);
+    background-color: color(accent-dark);
+
+    &:focus,
+    &:hover {
+      border-color: color(accent-light);
+      background-color: color(accent-light);
+    }
   }
 
   &-light {
-    color: color(dark);
-    background-color: color(light);
+    color: color(accent-dark);
+    background-color: color(white);
   }
 
 }
@@ -42,10 +51,10 @@
   height: 3.5rem;
   font-size: 1.4rem;
   border-radius: 0.75rem;
-  border: 1px solid color(dark);
+  border: 1px solid color(accent-dark);
 
   &.active {
-    color: color(light);
-    background-color: color(dark);
+    color: color(white);
+    background-color: color(accent-dark);
   }
 }

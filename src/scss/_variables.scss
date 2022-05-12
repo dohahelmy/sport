@@ -1,7 +1,9 @@
 /* ========== Colors ========== */
-$light:#FFFFFF;
-$grey: #EDEEF5;
-$dark: #3D7791;
+$white:#FFFFFF;
+$accent-light: #00A99D;
+$accent-dark: #2B3887;
+$garient-green: #39B54A;
+$garient-blue: #29ABE2;
 
 
 @function color($name) {
@@ -9,22 +11,37 @@ $dark: #3D7791;
 }
 
 :root {
-  --color-light:#FFFFFF;
-  --color-grey: #EDEEF5;
-  --color-dark: #3D7791;
+  --color-white: #FFFFFF;
+  --color-accent-light: #00A99D;
+  --color-accent-dark: #2B3887;
+  --color-garient-green: #39B54A;
+  --color-garient-blue: #29ABE2;
 }
 
 /* ========== Fonts ========== */
 
 @font-face {
-  font-family: "HelveticaNeueLT";
-  src: url("../fonts/HelveticaNeueLT.otf");
+  font-family: "DinNextLt";
+  src: url("../fonts/din-next-lt-w23-regular.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "DinNextLt";
+  src: url("../fonts/din-next-lt-w23-medium.ttf");
   font-weight: 500;
 }
+
 @font-face {
-  font-family: "HelveticaNeueLT";
-  src: url("../fonts/HelveticaNeueLT_B.otf");
+  font-family: "DinNextLt";
+  src: url("../fonts/din-next-lt-w23-bold.ttf");
   font-weight: 700;
+}
+
+@font-face {
+  font-family: "DinNextLt";
+  src: url("../fonts/din-next-lt-w23-heavy.ttf");
+  font-weight: 900;
 }
 
 // Responsive breakpoints

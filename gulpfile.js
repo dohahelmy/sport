@@ -60,6 +60,20 @@ async function includeHTML() {
 				prefix: "@@",
 				basepath: "@file",
 				context: {
+					nav: [
+						{
+							text: 'التسجيل',
+							link: ''
+						},
+						{
+							text: 'تمارين',
+							link: ''
+						},
+						{
+							text: 'تغذية',
+							link: ''
+						}
+					]
 					
 				},
 			})

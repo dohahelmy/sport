@@ -1,31 +1,57 @@
-<!-- @@include(
+@@include(
 './includes/0_header.html',
 {"webRoot": ".",
-"document-title": "توظيف",
+"document-title": "خدمات رياضية + صحية ",
 "page-id": "home"}
 )
 
 
-@@include('./includes/1_filter.html', {"webRoot": "."})
-<section class="create-btn">
-    <a href="@@webRoot/create.html" class="btn btn-dark">
-        <svg>
-            <use xlink:href=@@webRoot/assets/img/sprite.svg#plus>
-                <title>plus</title>
-        </svg>
-        <span>إنشاء سيرة ذاتية</span>
-    </a>
+<!-- <svg>
+    <use xlink:href=@@webRoot/assets/img/sprite.svg#plus>
+        <title>plus</title>
+</svg> -->
+
+<section class="sec-block register">
+    <h4 class="accent-title">قم بإدخال بياناتك الآن</h4>
+    <form action="" class="register-grid">
+        <fieldset>
+            <div class="form-group">
+                <label for="firstname">الإسم الأول</label>
+                <input type="text" name="firstname" id="firstname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="lastname">الإسم الأخير</label>
+                <input type="text" name="lastname" id="lastname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="gender">الجنس</label>
+                <input type="text" name="gender" id="gender" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="age">العمر</label>
+                <input type="text" name="age" id="age" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="height">الطول</label>
+                <input type="text" name="height" id="height" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="weight">الوزن</label>
+                <input type="text" name="weight" id="weight" class="form-control">
+            </div>
+
+        </fieldset>
+        <div class="flex flex-column justify-between">
+            <div class="img-wrapper">
+                <div class="img">
+                    <img src="@@webRoot/assets/img/samples/5.jpg" alt="register-img">
+                </div>
+            </div>
+
+            <input type="submit" class="btn btn-dark" value="ارسل بياناتك">
+        </div>
+    </form>
 </section>
 
-<section class="jobs-list">
-    @@for(var item = 0; item < 4; item++) { 
-        @@include('./includes/2_itemCard.html', {"webRoot": "." }) 
-    } 
 
-    <div class="text-center more">
-        <a href="" class="more-link back_line">اظهر المزيد</a>
-    </div>
-</section>
-
-
-@@include('./includes/scripts.html', {"webRoot": "."}) -->
+@@include('./includes/scripts.html', {"webRoot": "."})

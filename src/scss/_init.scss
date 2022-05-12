@@ -5,8 +5,8 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'HelveticaNeueLT', Helvetica, sans-serif, serif, arial;
-	font-weight: 500;
+	font-family: 'DinNextLt', Helvetica, sans-serif, serif, arial;
+	font-weight: 300;
 	transition: all .25s linear;
 }
 
@@ -14,21 +14,23 @@ html {
 	font-size: 62.5%;
 	direction: rtl;
 	scroll-behavior: smooth;
+
 	@media (max-width: 37.5em) {
 		font-size: 44%;
 	}
 }
 
 body {
-	font-size: 1.6rem;
-	color: color(dark);
-	background-color: color(light);
-	font-family: 'HelveticaNeueLT', Helvetica, sans-serif, serif, arial;
-	font-weight: 500;
+	font-size: 1.8rem;
+	color: color(accent-dark);
+	background-color: color(white);
+	font-family: 'DinNextLt', Helvetica, sans-serif, serif, arial;
+	font-weight: 300;
 	position: relative;
 	overflow-x: hidden;
-	line-height: 2;
-	&.active{
+	line-height: 1.75;
+
+	&.active {
 		overflow: hidden;
 	}
 }
@@ -43,23 +45,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: color(dark);
-	outline: 1px solid color(dark);
+	background-color: color(accent-dark);
+	outline: 1px solid color(accent-dark);
 }
 
-// ::selection {
-// 	background: color(primary);
-// 	color: color(white);
-// }
-
-// ::-moz-selection {
-// 	background: color(primary);
-// 	color: color(white);
-// }
-
 :focus {
-	outline: 1px solid color(dark);
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	outline: 1px solid color(accent-light);
+	// box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 a {
@@ -94,10 +86,10 @@ img {
 	user-select: none;
 }
 
-button{
+button {
 	cursor: pointer;
 }
 
-fieldset{
+fieldset {
 	border: none;
 }
