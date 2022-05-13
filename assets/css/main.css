@@ -204,10 +204,6 @@ fieldset {
   text-align: center;
 }
 
-.show {
-  display: block;
-}
-
 /* ========== General styles ========== */
 .relative {
   position: relative;
@@ -348,32 +344,6 @@ fieldset {
 }
 
 /* ========== Style SVG ========== */
-.resize-svg {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-.title-icon {
-  width: 2.8rem;
-  height: 2.8rem;
-}
-
-.accent-svg {
-  height: 22.4rem;
-}
-
-.svg-fill-white {
-  fill: var(--color-white);
-}
-
-.svg-fill-dark {
-  fill: var(--color-accent-dark);
-}
-
-.svg-fill-light {
-  fill: var(--color-white);
-}
-
 .paragraph {
   margin-top: 3rem;
 }
