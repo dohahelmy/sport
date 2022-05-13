@@ -36,16 +36,23 @@
 
 		<!-- Header Slider -->
 		<section class="owl-carousel main-slider relative">
-			@@for(var i = 0; i < 8; i++) { <div class="slider-item relative">
-				<div class="img-wrapper">
-					<div class="img">
-						<img src="@@webRoot/assets/img/samples/`+i+`.jpg" alt="slider-img-`+i+`">
+			@@for(var i = 0; i < 8; i++) { 
+				<div class="slider-item relative">
+					<div class="img-wrapper" 
+						style="
+							background-image: url('@@webRoot/assets/img/samples/`+i+`.jpg'); 
+							background-image: 
+								url('@@webRoot/assets/img/samples/`+i+`.jpg'),
+								linear-gradient(to left, #29ABE2, #39B54A)"
+					></div>
+					<div class="slider-item__text">
+						<div class="container">
+							<div class="text-wrapper flex flex-column items-center justify-center">
+								<span>مارس تماررررينك</span>
+								<span class="font-heavy">بالشكل الصحيح</span>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="slider-item__text flex flex-column items-center justify-center">
-					<span>مارس تماررررينك</span>
-					<span class="font-heavy">بالشكل الصحيح</span>
-				</div>
 				</div>
 				}
 		</section>

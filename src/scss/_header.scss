@@ -57,41 +57,46 @@ header {}
 
 .main-slider {
     .slider-item {
+        background-image: linear-gradient(to left, color(gradient-blue), color(gradient-green));
+
         .img-wrapper {
-            max-height: 73rem;
-            // .img{
-            //     background-blend-mode: luminosity;
-            //     background-image: linear-gradient(to left, color(garient-green), color(garient-blue));
-            // }
+            opacity: 0.35;
+            max-height: 50rem;
+            background-blend-mode: luminosity;
+            background-position: center;
+            background-size: cover;
 
             &::before {
-                padding-top: 40%;
+                padding-top: 45%;
 
-            }
-
-            &::after {
-                content: '';
-                position: absolute;
-                inset: 0;
             }
         }
 
         &__text {
             position: absolute;
             inset: 0;
-            margin-inline-start: 40%;
             margin-bottom: 5.2rem;
 
-            span {
-                color: color(white);
-                font-size: 3rem;
-                line-height: 1.25;
-                text-shadow: 0.7rem 0.7rem 1.2rem #444444;
+            .container {
+                height: 100%;
+            }
 
-                @media only screen and (min-width: $phones) {
-                    font-size: 4rem;
+            .text-wrapper {
+                height: 100%;
+                margin-inline-start: 40%;
+
+                span {
+                    color: color(white);
+                    font-size: 3rem;
+                    line-height: 1.25;
+                    text-shadow: 0.7rem 0.7rem 1.2rem #444444;
+
+                    @media only screen and (min-width: $phones) {
+                        font-size: 4rem;
+                    }
                 }
             }
+
         }
     }
 }
