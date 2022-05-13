@@ -97,8 +97,38 @@ async function includeHTML() {
 							min: '15',
 							img: '5'
 						}
+					],
+					nutrition: [{
+							type: 'الفطور',
+							start: '8 صباحا',
+							end: '10 صباحا'
+						},
+						{
+							type: 'سناك',
+							start: '11 صباحا',
+							end: '1 مساءا'
+						},
+						{
+							type: 'غذاء',
+							start: '2 مساءا',
+							end: '3 مساءا'
+						},
+						{
+							type: 'سناك',
+							start: '4 مساءا',
+							end: '5 مساءا'
+						},
+						{
+							type: 'عشاء',
+							start: '7 مساءا',
+							end: '8 مساءا'
+						},
+						{
+							type: 'سناك',
+							start: '9 مساءا',
+							end: '10 مساءا'
+						}
 					]
-
 				},
 			})
 		)

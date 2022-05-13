@@ -1,6 +1,7 @@
 /* ========== Colors ========== */
 :root {
   --color-white: #FFFFFF;
+  --color-grey: #D9DBE9;
   --color-accent-light: #00A99D;
   --color-accent-dark: #2B3887;
   --color-gradient-green: #39B54A;
@@ -167,8 +168,8 @@ fieldset {
   color: var(--color-white);
 }
 
-.bg-gray {
-  background-color: rgba(46, 49, 146, 0.05);
+.bg-grey {
+  background-color: var(--color-grey);
 }
 
 .bg-dark {
@@ -355,15 +356,20 @@ fieldset {
 .gradient-block {
   color: var(--color-white);
   background-image: linear-gradient(-45deg, var(--color-gradient-blue), var(--color-gradient-green));
+  margin-top: 3rem;
+  padding: 3rem;
 }
 
 .mega-title {
   text-align: center;
   font-weight: 300;
   font-size: 4rem;
-  padding: 6rem 0;
   text-shadow: 0.7rem 0.7rem 1.2rem rgba(0, 0, 0, 0.45);
-  margin-top: 3rem;
+}
+@media only screen and (min-width: 576px) {
+  .mega-title {
+    padding: 6rem 0;
+  }
 }
 
 .btn {
@@ -410,6 +416,15 @@ fieldset {
 .btn-light {
   color: var(--color-accent-dark);
   background-color: var(--color-white);
+}
+
+.next-btn {
+  font-weight: 700;
+  margin-top: 5rem;
+  max-width: 35rem;
+  width: 100%;
+  padding: 0.35rem;
+  margin: 3rem auto 0 auto;
 }
 
 .logo {
@@ -535,14 +550,6 @@ fieldset {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.exercises .btn-accent {
-  font-weight: 700;
-  margin-top: 5rem;
-  max-width: 35rem;
-  width: 100%;
-  padding: 0.35rem;
-  margin: 3rem auto 0 auto;
-}
 
 .exercise-grid {
   margin-bottom: 3rem;
@@ -584,7 +591,7 @@ fieldset {
   font-size: 5rem;
   width: 8rem;
   height: 8rem;
-  border: 0.4rem solid #B7BBD6;
+  border: 0.4rem solid var(--color-grey);
   border-radius: 100%;
   top: 50%;
   left: 50%;
@@ -597,7 +604,7 @@ fieldset {
 .vjs-modal-dialog .vjs-modal-dialog-content {
   top: 50%;
   transform: translateY(-50%);
-  color: #B7BBD6;
+  color: var(--color-grey);
 }
 
 .vjs-poster::before {
@@ -605,6 +612,53 @@ fieldset {
   position: absolute;
   inset: 0;
   background-color: rgba(43, 56, 135, 0.75);
+}
+
+.nutrition {
+  padding-bottom: 0;
+}
+.nutrition .banner {
+  color: var(--color-white);
+  display: grid;
+  background-color: var(--color-accent-dark);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 576px) {
+  .nutrition .banner {
+    height: 30rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.nutrition .banner__title {
+  padding: 2rem;
+}
+.nutrition .banner__img {
+  width: 100%;
+  height: 100%;
+}
+.nutrition .banner__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+.nutrition-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.nutrition .bg-grey {
+  padding: 5rem;
+}
+.nutrition .meal {
+  padding: 2rem;
+  border-bottom: 1px dashed var(--color-accent-dark);
+}
+.nutrition .meal-title {
+  font-size: 2rem;
 }
 
 .footer {
@@ -628,7 +682,7 @@ fieldset {
 
 .copyrights {
   margin-top: 1rem;
-  background-color: #D9DBE9;
+  background-color: var(--color-grey);
   color: var(--color-accent-dark);
   padding: 3rem 0;
 }

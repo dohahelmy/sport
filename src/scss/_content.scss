@@ -46,15 +46,6 @@
       padding-bottom: 5rem;
     }
   }
-
-  .btn-accent {
-    font-weight: 700;
-    margin-top: 5rem;
-    max-width: 35rem;
-    width: 100%;
-    padding: 0.35rem;
-    margin: 3rem auto 0 auto;
-  }
 }
 
 .exercise-grid {
@@ -106,7 +97,7 @@
   font-size: 5rem;
   width: 8rem;
   height: 8rem;
-  border: 0.4rem solid #B7BBD6;
+  border: 0.4rem solid color(grey);
   border-radius: 100%;
   top: 50%;
   left: 50%;
@@ -119,7 +110,7 @@
 .vjs-modal-dialog .vjs-modal-dialog-content {
   top: 50%;
   transform: translateY(-50%);
-  color: #B7BBD6;
+  color: color(grey);
 }
 
 .vjs-poster {
@@ -128,5 +119,57 @@
     position: absolute;
     inset: 0;
     background-color: rgba(43, 56, 135, 0.75);
+  }
+}
+
+.nutrition {
+  padding-bottom: 0;
+
+  .banner {
+    color: color(white);
+    display: grid;
+    background-color: color(accent-dark);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (min-width: $phones) {
+      height: 30rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    &__title {
+      padding: 2rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .bg-grey {
+    padding: 5rem;
+  }
+
+  .meal {
+    padding: 2rem;
+    border-bottom: 1px dashed color(accent-dark);
+
+    &-title {
+      font-size: 2rem;
+    }
   }
 }

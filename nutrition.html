@@ -11,9 +11,9 @@
         <title>plus</title>
 </svg> -->
 
-<section class="sec-block exercises">
+<section class="sec-block nutrition">
     <div class="container">
-        <h4 class="accent-title">جداول التمارين الرياضية</h4>
+        <h4 class="accent-title">برامج التغذية</h4>
         <p class="paragraph">بلا شك ينعكس اسلوب الحياة الصحي للموظفين على أداء شركتك، فالرياضة ترفع الروح المعنوية
             لموظفيك
             وبالتالي تزيد
@@ -21,62 +21,39 @@
             شركتك،
             فنح نقدم مجموعة متنوعة من الحلول لتلبية احتياجات الشركات المختلفة.
         </p>
-        <div class="gradient-block">
-            <h4 class="mega-title">
-                جدول تمــــاريـــــن
-                <br>
-                <span class="font-bold">الـــيــــــوم الأول</span>
-            </h4>
-        </div>
+        
     </div>
 
-    <div class="bg-dark sec-block">
-        <div class="container">
-            @@for(var i = 0; i < exercises.length; i++){
-                <div class="exercise-grid">
-                    <div class="exercise-grid__text">
-                        <div>
-                            <h5 class="title">
-                                <span class="is-accent">
-                                    التمرين
-                                    <span>`+exercises[i].order+`</span>: 
-                                </span>
-                                <span>`+exercises[i].title+`</span>
-                            </h5>
-                            <h5 class="title">
-                                المدة الزمنية  
-                                <span>`+exercises[i].min+`</span> 
-                                دقيقة
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="exercise-grid__video">
-                        <video
-                            id="my-video"
-                            class="video-js"
-                            controls
-                            preload="auto"
-                            height="264"
-                            poster='@@webRoot/assets/img/samples/`+exercises[i].img+`.jpg'
-                            data-setup="{}"
-                        >
-                            <source src="@@webRoot/assets/img/sample.mp4" type="video/mp4" />
-                            <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="https://videojs.com/html5-video-support/" target="_blank"
-                                >supports HTML5 video</a
-                            >
-                            </p>
-                        </video>
-                    </div>
-                </div>
-            }
-
-            <div class="text-center">
-                <a href="" class="btn btn-accent">جدول تمارين اليوم التالي</a>
+    <div class="container">
+        <div class="banner">
+            <div class="banner__title">
+                <h4 class="mega-title">
+                    بـرنـــامج تغـــذيــة
+                    <br>
+                    <span class="font-bold is-accent">الــــيـــــوم الأول</span>
+                </h4>
+            </div>
+            <div class="banner__img">
+                <img src="@@webRoot/assets/img/samples/3.jpg" alt="nutrition-banner">
             </div>
         </div>
+        <div class="bg-grey">
+            <h3 class="nutrition-title">برنامج تغذية اليوم الأول</h3>
+            @@for(var i = 0; i < nutrition.length; i++){
+                <div class="meal text-center">
+                    <h5 class="meal-title is-accent">`+nutrition[i].type+`</h5>
+                    <p>
+                        الساعة <span>`+nutrition[i].start+`</span>
+                        -
+                        الساعة <span>`+nutrition[i].end+`</span>
+                    </p>
+                </div>
+            }
+            <div class="text-center">
+                <a href="" class="btn btn-dark next-btn">برنامج تغذية اليوم الثاني</a>
+            </div>
+        </div>
+
     </div>
 </section>
 

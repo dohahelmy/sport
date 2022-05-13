@@ -38,8 +38,8 @@
 	color: color(white);
 }
 
-.bg-gray {
-	background-color: rgba(46, 49, 146, 0.05);
+.bg-grey {
+	background-color: color(grey);
 }
 
 .bg-dark {
@@ -259,13 +259,17 @@
 .gradient-block {
 	color: color(white);
 	background-image: linear-gradient(-45deg, color(gradient-blue), color(gradient-green));
+	margin-top: 3rem;
+	padding: 3rem;
 }
 
 .mega-title {
 	text-align: center;
 	font-weight: 300;
 	font-size: 4rem;
-	padding: 6rem 0;
 	text-shadow: 0.7rem 0.7rem 1.2rem rgba(0, 0, 0, 0.45);
-	margin-top: 3rem;
+
+	@media only screen and (min-width: $phones) {
+		padding: 6rem 0;
+	}
 }
