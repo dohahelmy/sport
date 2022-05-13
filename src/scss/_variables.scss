@@ -2,8 +2,8 @@
 $white:#FFFFFF;
 $accent-light: #00A99D;
 $accent-dark: #2B3887;
-$garient-green: #39B54A;
-$garient-blue: #29ABE2;
+$gradient-green: #39B54A;
+$gradient-blue: #29ABE2;
 
 
 @function color($name) {
@@ -14,8 +14,8 @@ $garient-blue: #29ABE2;
   --color-white: #FFFFFF;
   --color-accent-light: #00A99D;
   --color-accent-dark: #2B3887;
-  --color-garient-green: #39B54A;
-  --color-garient-blue: #29ABE2;
+  --color-gradient-green: #39B54A;
+  --color-gradient-blue: #29ABE2;
 }
 
 /* ========== Fonts ========== */

@@ -9,7 +9,9 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png" />
-	<!-- Owl Carousel CSS -->
+	<!-- VideoJs CSS -->
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+<!-- Owl Carousel CSS -->
 <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
 <!-- Style -->
 <link rel="stylesheet" href="./assets/css/main.css" />
@@ -27,10 +29,19 @@
 				<div class="navbar-container flex flex-column items-end justify-between">
 					<button type="button" class="btn btn-outline" id="lang">En</button>
 					<nav class="navbar flex items-center">
-						 <a href="" class="nav-link">التسجيل</a>
-							 <a href="" class="nav-link">تمارين</a>
-							 <a href="" class="nav-link">تغذية</a>
-							
+						 
+							<a href="./" class="nav-link">
+								التسجيل
+							</a>
+						 
+							<a href="/exercises.html" class="nav-link">
+								تمارين
+							</a>
+						 
+							<a href="./nutrition.html" class="nav-link">
+								تغذية
+							</a>
+						
 					</nav>
 				</div>
 			</nav>
@@ -130,7 +141,7 @@
 		</section>
 	</header>
 
-	<main role="main" class="container" id="home">
+	<main role="main" id="home">
 
 
 <!-- <svg>
@@ -139,45 +150,47 @@
 </svg> -->
 
 <section class="sec-block register">
-    <h4 class="accent-title">قم بإدخال بياناتك الآن</h4>
-    <form action="" class="register-grid">
-        <fieldset>
-            <div class="form-group">
-                <label for="firstname">الإسم الأول</label>
-                <input type="text" name="firstname" id="firstname" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="lastname">الإسم الأخير</label>
-                <input type="text" name="lastname" id="lastname" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="gender">الجنس</label>
-                <input type="text" name="gender" id="gender" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="age">العمر</label>
-                <input type="text" name="age" id="age" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="height">الطول</label>
-                <input type="text" name="height" id="height" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="weight">الوزن</label>
-                <input type="text" name="weight" id="weight" class="form-control">
-            </div>
-
-        </fieldset>
-        <div class="flex flex-column justify-between">
-            <div class="img-wrapper">
-                <div class="img">
-                    <img src="./assets/img/samples/5.jpg" alt="register-img">
+    <div class="container">
+        <h4 class="accent-title">قم بإدخال بياناتك الآن</h4>
+        <form action="" class="register-grid">
+            <fieldset>
+                <div class="form-group">
+                    <label for="firstname">الإسم الأول</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control">
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="lastname">الإسم الأخير</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="gender">الجنس</label>
+                    <input type="text" name="gender" id="gender" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="age">العمر</label>
+                    <input type="text" name="age" id="age" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="height">الطول</label>
+                    <input type="text" name="height" id="height" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="weight">الوزن</label>
+                    <input type="text" name="weight" id="weight" class="form-control">
+                </div>
 
-            <input type="submit" class="btn btn-dark" value="ارسل بياناتك">
-        </div>
-    </form>
+            </fieldset>
+            <div class="flex flex-column justify-between">
+                <div class="img-wrapper">
+                    <div class="img">
+                        <img src="./assets/img/samples/5.jpg" alt="register-img">
+                    </div>
+                </div>
+
+                <input type="submit" class="btn btn-dark" value="ارسل بياناتك">
+            </div>
+        </form>
+    </div>
 </section>
 
 
@@ -230,6 +243,8 @@
 
   <!-- jQuery JS -->
   <script src="./assets/js/jquery-3.5.1.min.js"></script>
+  <!-- VideoJs JS -->
+  <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
   <!-- Owl Carousel JS -->
   <script src="./assets/js/owl.carousel.min.js"></script>
   <!-- Custom JS -->

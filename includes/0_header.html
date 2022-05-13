@@ -24,8 +24,11 @@
 				<div class="navbar-container flex flex-column items-end justify-between">
 					<button type="button" class="btn btn-outline" id="lang">En</button>
 					<nav class="navbar flex items-center">
-						@@for(var i = 0; i < nav.length; i++) { <a href="" class="nav-link">`+ nav[i].text +`</a>
-							}
+						@@for(var i = 0; i < nav.length; i++) { 
+							<a href="`+ nav[i].link +`" class="nav-link">
+								`+ nav[i].text +`
+							</a>
+						}
 					</nav>
 				</div>
 			</nav>
@@ -48,4 +51,4 @@
 		</section>
 	</header>
 
-	<main role="main" class="container" id="@@page-id">
+	<main role="main" id="@@page-id">

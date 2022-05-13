@@ -1,0 +1,84 @@
+@@include(
+'./includes/0_header.html',
+{"webRoot": ".",
+"document-title": "خدمات رياضية + صحية ",
+"page-id": "exercise"}
+)
+
+
+<!-- <svg>
+    <use xlink:href=@@webRoot/assets/img/sprite.svg#plus>
+        <title>plus</title>
+</svg> -->
+
+<section class="sec-block exercises">
+    <div class="container">
+        <h4 class="accent-title">جداول التمارين الرياضية</h4>
+        <p class="paragraph">بلا شك ينعكس اسلوب الحياة الصحي للموظفين على أداء شركتك، فالرياضة ترفع الروح المعنوية
+            لموظفيك
+            وبالتالي تزيد
+            إنتاجيتهم وتقل متطلبات الرعاية الصحية، وشراكتك مع وقت اللياقة هي الطريقة المثلى لتعزيز مزايا الموظفين في
+            شركتك،
+            فنح نقدم مجموعة متنوعة من الحلول لتلبية احتياجات الشركات المختلفة.
+        </p>
+        <div class="gradient-block">
+            <h4 class="mega-title">
+                جدول تمــــاريـــــن
+                <br>
+                <span class="font-bold">الـــيــــــوم الأول</span>
+            </h4>
+        </div>
+    </div>
+
+    <div class="bg-dark sec-block">
+        <div class="container">
+            @@for(var i = 0; i < exercises.length; i++){
+                <div class="exercise-grid">
+                    <div class="exercise-grid__text">
+                        <div>
+                            <h5 class="title">
+                                <span class="is-accent">
+                                    التمرين
+                                    <span>`+exercises[i].order+`</span>: 
+                                </span>
+                                <span>`+exercises[i].title+`</span>
+                            </h5>
+                            <h5 class="title">
+                                المدة الزمنية  
+                                <span>`+exercises[i].min+`</span> 
+                                دقيقة
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="exercise-grid__video">
+                        <video
+                            id="my-video"
+                            class="video-js"
+                            controls
+                            preload="auto"
+                            height="264"
+                            poster='@@webRoot/assets/img/samples/`+exercises[i].img+`.jpg'
+                            data-setup="{}"
+                        >
+                            <source src="@@webRoot/assets/img/sample.mp4" type="video/mp4" />
+                            <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                >supports HTML5 video</a
+                            >
+                            </p>
+                        </video>
+                    </div>
+                </div>
+            }
+
+            <div class="text-center">
+                <a href="" class="btn btn-accent">جدول تمارين اليوم التالي</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('./includes/scripts.html', {"webRoot": "."})

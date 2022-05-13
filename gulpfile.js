@@ -60,21 +60,45 @@ async function includeHTML() {
 				prefix: "@@",
 				basepath: "@file",
 				context: {
-					nav: [
-						{
+					nav: [{
 							text: 'التسجيل',
-							link: ''
+							link: './'
 						},
 						{
 							text: 'تمارين',
-							link: ''
+							link: '/exercises.html'
 						},
 						{
 							text: 'تغذية',
-							link: ''
+							link: './nutrition.html'
+						}
+					],
+					exercises: [{
+							order: 'الأول',
+							title: 'ركض',
+							min: '30',
+							img: '4'
+						},
+						{
+							order: 'الثاني',
+							title: 'تمارين سويدي',
+							min: '20',
+							img: '6'
+						},
+						{
+							order: 'الثالث',
+							title: 'أجهزة أيروبيك',
+							min: '45',
+							img: '7'
+						},
+						{
+							order: 'الرابع',
+							title: 'المشي السريع',
+							min: '15',
+							img: '5'
 						}
 					]
-					
+
 				},
 			})
 		)

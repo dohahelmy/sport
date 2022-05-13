@@ -36,3 +36,97 @@
     }
   }
 }
+
+.exercises {
+  padding-bottom: 0;
+
+  .bg-dark {
+    .container {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  .btn-accent {
+    font-weight: 700;
+    margin-top: 5rem;
+    max-width: 35rem;
+    width: 100%;
+    padding: 0.35rem;
+    margin: 3rem auto 0 auto;
+  }
+}
+
+.exercise-grid {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-gap: 3rem;
+
+  @media only screen and (min-width: $phones) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  &__text {
+    padding: 2rem;
+    display: grid;
+    background-color: #424D95;
+
+    >div {
+      align-self: center;
+
+    }
+
+    .title {
+      width: 85%;
+      margin: 0 auto;
+      font-weight: 300;
+      font-size: 2.4rem;
+      color: color(white);
+
+      .is-accent {
+        font-weight: 700;
+
+        * {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__video {
+
+    video,
+    .video-js {
+      width: 100%;
+    }
+  }
+}
+
+.video-js .vjs-big-play-button {
+  font-size: 5rem;
+  width: 8rem;
+  height: 8rem;
+  border: 0.4rem solid #B7BBD6;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before,
+.video-js .vjs-modal-dialog,
+.vjs-button>.vjs-icon-placeholder:before,
+.vjs-modal-dialog .vjs-modal-dialog-content {
+  top: 50%;
+  transform: translateY(-50%);
+  color: #B7BBD6;
+}
+
+.vjs-poster {
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(43, 56, 135, 0.75);
+  }
+}

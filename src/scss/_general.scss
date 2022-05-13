@@ -30,11 +30,7 @@
 }
 
 // colors
-.is-primary {
-	color: color(primary);
-}
-
-.is-dimmed {
+.is-accent {
 	color: color(accent-light);
 }
 
@@ -46,8 +42,8 @@
 	background-color: rgba(46, 49, 146, 0.05);
 }
 
-.bg-primary {
-	background-color: color(primary);
+.bg-dark {
+	background-color: color(accent-dark);
 }
 
 // Fonts
@@ -254,4 +250,22 @@
 	&-light {
 		fill: color(white);
 	}
+}
+
+.paragraph {
+	margin-top: 3rem;
+}
+
+.gradient-block {
+	color: color(white);
+	background-image: linear-gradient(-45deg, color(gradient-blue), color(gradient-green));
+}
+
+.mega-title {
+	text-align: center;
+	font-weight: 300;
+	font-size: 4rem;
+	padding: 6rem 0;
+	text-shadow: 0.7rem 0.7rem 1.2rem rgba(0, 0, 0, 0.45);
+	margin-top: 3rem;
 }

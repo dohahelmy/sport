@@ -6,7 +6,6 @@
   border: 1px solid;
   font-size: 2rem;
   text-align: center;
-  // padding-bottom: 0.5rem;
   letter-spacing: 1px;
   position: relative;
 
@@ -26,6 +25,19 @@
   }
 
 
+  &-accent {
+    color: color(white);
+    border-color: color(accent-light);
+    background-color: color(accent-light);
+
+    &:focus,
+    &:hover {
+      color: color(accent-light);
+      border-color: color(white);
+      background-color: color(white);
+    }
+  }
+
   &-dark {
     color: color(white);
     border-color: color(accent-dark);
@@ -43,18 +55,4 @@
     background-color: color(white);
   }
 
-}
-
-.tab {
-  min-width: 11rem;
-  padding: 0 1.25rem;
-  height: 3.5rem;
-  font-size: 1.4rem;
-  border-radius: 0.75rem;
-  border: 1px solid color(accent-dark);
-
-  &.active {
-    color: color(white);
-    background-color: color(accent-dark);
-  }
 }
