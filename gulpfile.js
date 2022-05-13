@@ -62,15 +62,15 @@ async function includeHTML() {
 				context: {
 					nav: [{
 							text: 'التسجيل',
-							link: './'
+							link: 'index.html'
 						},
 						{
 							text: 'تمارين',
-							link: '/exercises.html'
+							link: 'exercises.html'
 						},
 						{
 							text: 'تغذية',
-							link: './nutrition.html'
+							link: 'nutrition.html'
 						}
 					],
 					exercises: [{

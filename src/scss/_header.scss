@@ -1,5 +1,3 @@
-header {}
-
 .logo {
     display: inline-block;
     height: 10rem;
@@ -43,6 +41,7 @@ header {}
             margin-inline-end: 1rem;
             text-align: center;
 
+            &.active,
             &:hover,
             &:focus {
                 background-color: color(accent-light);

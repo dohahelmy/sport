@@ -4,9 +4,6 @@
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
-	// @media (min-width: $phones) {
-	// 	max-width: 54rem;
-	// }
 
 	@media (min-width: $tablets) {
 		max-width: 75rem;
@@ -15,10 +12,6 @@
 	@media (min-width: $desktops) {
 		max-width: 96rem;
 	}
-
-	// @media (min-width: $HD) {
-	// 	max-width: 114rem;
-	// }
 }
 
 .dir-ltr {
@@ -65,10 +58,6 @@
 
 .text-center {
 	text-align: center;
-}
-
-.show {
-	display: block;
 }
 
 /* ========== General styles ========== */
@@ -151,10 +140,7 @@
 		align-items: center;
 		justify-content: center;
 		padding: 2rem 0 1.5rem 0;
-		// background-color: #8A91BD;
-		// background-color: rgba(138, 145, 189, 0.65);
 		background-color: rgba(0, 0, 0, 0.5);
-		// background-blend-mode: multiply;
 	}
 
 	&-dot {
@@ -226,34 +212,6 @@
 
 
 /* ========== Style SVG ========== */
-.resize-svg {
-	width: 2.4rem;
-	height: 2.4rem;
-}
-
-.title-icon {
-	width: 2.8rem;
-	height: 2.8rem;
-}
-
-.accent-svg {
-	height: 22.4rem;
-}
-
-.svg-fill {
-	&-white {
-		fill: color(white);
-	}
-
-	&-dark {
-		fill: color(accent-dark);
-	}
-
-	&-light {
-		fill: color(white);
-	}
-}
-
 .paragraph {
 	margin-top: 3rem;
 }
