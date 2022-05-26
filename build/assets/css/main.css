@@ -636,8 +636,26 @@ fieldset {
   padding: 2rem;
   border-bottom: 1px dashed var(--color-accent-dark);
 }
+.nutrition .meal .active, .nutrition .meal:hover, .nutrition .meal:focus {
+  cursor: pointer;
+}
+.nutrition .meal .active .meal-title img, .nutrition .meal:hover .meal-title img, .nutrition .meal:focus .meal-title img {
+  transform: rotate(-180deg);
+}
 .nutrition .meal-title {
+  width: 12rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nutrition .meal-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.025);
 }
 
 .footer {

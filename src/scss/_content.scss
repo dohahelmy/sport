@@ -168,8 +168,33 @@
     padding: 2rem;
     border-bottom: 1px dashed color(accent-dark);
 
+    .active,
+    &:hover,
+    &:focus {
+      cursor: pointer;
+
+      .meal-title {
+        img {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
     &-title {
+      width: 12rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 0;
       font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-content {
+      max-height: 0;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.025);
     }
   }
 }

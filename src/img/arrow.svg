@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-2 5 20 20">
+  <g id="arrow" style="transform: rotate(-90deg); transform-origin: center;">
+    <g transform="translate(-8.998 -10.123)">
+      <path id="Path_6" data-name="Path 6" d="M17.672,10.454a1.125,1.125,0,0,1,0,1.593L11.716,18l5.956,5.954a1.126,1.126,0,0,1-1.593,1.593L9.329,18.8a1.125,1.125,0,0,1,0-1.593l6.75-6.75a1.125,1.125,0,0,1,1.593,0Z" fill="#00A99D" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
