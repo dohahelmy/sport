@@ -99,3 +99,14 @@
         }
     }
 }
+
+.inner-header {
+    padding: 5rem 0;
+
+    &__title {
+        font-size: 4rem;
+        text-align: center;
+        color: var(--color-white);
+        text-shadow: 0.7rem 0.7rem 1.2rem rgba(0, 0, 0, 0.45);
+    }
+}

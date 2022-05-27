@@ -16,7 +16,7 @@
 
 <body>
 	<!-- start header-->
-	<header id="home">
+	<header>
 		<!-- Navbar -->
 		<div class="container">
 			<nav class="nav flex items-center justify-between">
@@ -24,38 +24,42 @@
 				<div class="navbar-container flex flex-column items-end justify-between">
 					<button type="button" class="btn btn-outline" id="lang">En</button>
 					<nav class="navbar flex items-center">
-						@@for(var i = 0; i < nav.length; i++) { 
-							<a href="`+ nav[i].link +`" class="nav-link">
-								`+ nav[i].text +`
+						@@for(var i = 0; i < nav.length; i++) { <a href="`+ nav[i].link +`" class="nav-link">
+							`+ nav[i].text +`
 							</a>
-						}
-					</nav>
+							}
+						</nav>
 				</div>
 			</nav>
 		</div>
 
 		<!-- Header Slider -->
-		<section class="owl-carousel main-slider relative">
-			@@for(var i = 0; i < 8; i++) { 
-				<div class="slider-item relative">
-					<div class="img-wrapper" 
-						style="
-							background-image: url('@@webRoot/assets/img/samples/`+i+`.jpg'); 
-							background-image: 
-								url('@@webRoot/assets/img/samples/`+i+`.jpg'),
-								linear-gradient(to left, #29ABE2, #39B54A)"
-					></div>
-					<div class="slider-item__text">
-						<div class="container">
-							<div class="text-wrapper flex flex-column items-center justify-center">
-								<span>مارس تماررررينك</span>
-								<span class="font-heavy">بالشكل الصحيح</span>
+		@@if (type === 'text') {
+			@@include('1_inner_header.html', {
+				"pageTitle": "@@title"
+			})
+		}
+		@@if (type === 'slider') {
+			<section class="owl-carousel main-slider relative">
+				@@for(var i = 0; i < 8; i++) { 
+					<div class="slider-item relative">
+						<div class="img-wrapper" style="
+										background-image: url('@@webRoot/assets/img/samples/`+i+`.jpg'); 
+										background-image: 
+											url('@@webRoot/assets/img/samples/`+i+`.jpg'),
+											linear-gradient(to left, #29ABE2, #39B54A)"></div>
+						<div class="slider-item__text">
+							<div class="container">
+								<div class="text-wrapper flex flex-column items-center justify-center">
+									<span>مارس تماررررينك</span>
+									<span class="font-heavy">بالشكل الصحيح</span>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 				}
-		</section>
+			</section>
+		}
 	</header>
 
 	<main role="main" id="@@page-id">

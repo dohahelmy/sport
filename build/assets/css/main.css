@@ -487,6 +487,16 @@ fieldset {
   }
 }
 
+.inner-header {
+  padding: 5rem 0;
+}
+.inner-header__title {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--color-white);
+  text-shadow: 0.7rem 0.7rem 1.2rem rgba(0, 0, 0, 0.45);
+}
+
 .register .accent-title {
   display: inline-block;
   padding-bottom: 2rem;
@@ -656,6 +666,16 @@ fieldset {
   max-height: 0;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.025);
+}
+
+.static-page p {
+  margin-bottom: 2rem;
+}
+.static-page img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer {

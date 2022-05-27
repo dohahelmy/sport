@@ -198,3 +198,14 @@
     }
   }
 }
+
+.static-page {
+  p{
+    margin-bottom: 2rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
