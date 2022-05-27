@@ -417,7 +417,7 @@ fieldset {
   padding-bottom: 1.5rem;
 }
 .nav .btn {
-  width: 3rem;
+  width: 7rem;
   height: 3rem;
   font-size: 1.4rem;
   padding-top: 0.35rem;
@@ -447,6 +447,105 @@ fieldset {
 .nav .navbar .nav-link:last-child {
   -webkit-margin-end: 0;
           margin-inline-end: 0;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-dialog {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  padding: 0 2rem;
+  display: grid;
+  place-items: center;
+}
+.modal-body {
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px black;
+}
+.modal-header {
+  text-align: center;
+  padding: 4rem;
+  border-start-start-radius: 1.25rem;
+  border-start-end-radius: 1.25rem;
+  background-color: var(--color-grey);
+  color: var(--color-accent-dark);
+  display: grid;
+  place-items: center;
+}
+.modal-header .logo {
+  width: 20rem;
+  height: 6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal-header .desc {
+  color: var(--color-light);
+  margin-top: 1rem;
+  opacity: 0.65;
+}
+.modal-content {
+  padding: 4rem;
+  border-end-start-radius: 1.25rem;
+  border-end-end-radius: 1.25rem;
+}
+.modal-content form label {
+  font-weight: 700;
+}
+.modal-content form .btns {
+  margin: 2.6rem -0.5rem 0;
+}
+.modal-content form .btn {
+  height: 4rem;
+  flex-grow: 1;
+  margin: 0 0.5rem;
+}
+
+.radio-input {
+  display: inline-flex;
+  align-items: center;
+  -webkit-margin-end: 3rem;
+          margin-inline-end: 3rem;
+  margin-bottom: 1rem;
+}
+.radio-input label {
+  font-weight: 500 !important;
+}
+.radio-input [type=radio] {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+.radio-input:last-child {
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+}
+
+.input-box {
+  margin-bottom: 1.6rem;
+}
+.input-box label {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+.input-box input {
+  width: 100%;
+  height: 4rem;
+  padding: 0.25rem 1rem;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-accent-dark);
 }
 
 .main-slider .slider-item {

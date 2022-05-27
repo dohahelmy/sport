@@ -1,10 +1,16 @@
-$(function () {});
+$(function () {
+  $("#modal-btn, .modal-close").click(function () {
+    $("body, .modal-dialog, .modal").toggleClass("active");
+  });
+});
+
 $('.main-slider').owlCarousel({
   loop: true,
   rtl: true,
   dots: true,
   items: 1,
 })
+
 
 for (let i = 0; i < $(".collapsible").length; i++) {
   $(".collapsible")[i].addEventListener("click", function () {
